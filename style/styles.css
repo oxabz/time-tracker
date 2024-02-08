@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.proportion-bars {
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: start;
+    gap: 1rem;
+}
