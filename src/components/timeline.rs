@@ -53,7 +53,7 @@ pub fn render_activity((activity, start, end):(String, u64, Option<u64>)) -> imp
     let style = format!("left: {left:.2}%; width: {width:.2}%; background-color: hsl({hue}, 70%, 70%);", left=left, width=width, hue=hue);
 
     view! {
-        <div class="absolute top-0 h-12 p-2 radius rounded-md text-primary-content" style=style>
+        <div title={activity.clone()} class="absolute top-0 h-12 p-2 radius rounded-md text-primary-content" style=style>
             <p class="text-xs truncate">{activity}</p>
         </div>
     }
